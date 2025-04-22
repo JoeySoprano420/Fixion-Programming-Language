@@ -1,0 +1,11 @@
+intent Deploy[Service]:
+    allocate.stream(Virtual.Register) > system.memory
+    loop @thread highway:
+        if load.resource(metaMap["auth"]) fails:
+            BDR(error: resource_missing)
+        else:
+            execute Sequence{
+                inject.service(config)
+                bind.endpoint("/start") => Service.Begin
+            }
+    outcome: "Service running with highway sync"
