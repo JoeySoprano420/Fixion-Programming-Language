@@ -1,0 +1,4 @@
+intent EncryptPayload:
+    stream("user.keys") > sanctum.memory
+    execute LayerThread["X-01"]
+    outcome: "Payload secure, echo trace scrubbed"
