@@ -1,0 +1,8 @@
+{
+  "plugins": [
+    "injector.middleware.trace",
+    "optimizer.async-flatten",
+    "decorator.semantic-hooks",
+    "customEmit.edge-scheduler"
+  ]
+}
