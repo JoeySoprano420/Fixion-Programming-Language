@@ -1,0 +1,5 @@
+"quantumFallbacks": {
+  "maxLayers": 4,
+  "preferredBias": "stability",
+  "collapseTime": "12ms"
+}
