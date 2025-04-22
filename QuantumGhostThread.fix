@@ -1,0 +1,2 @@
+thread.fork(ghost)
+ghost.replay("EncryptPayload") as "alternate-path-X"
