@@ -1,0 +1,6 @@
+intent Migrate[Entity]:
+    stream.cache("state") into ghostMemory
+    HRO.IntentEcho.mirrorState("migration.begin")
+    loop @warp:
+        if meta.lag > threshold:
+            OutcomeDisplacement.trigger("fallbackPlan")
