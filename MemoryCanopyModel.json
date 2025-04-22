@@ -1,0 +1,5 @@
+"memoryProfile": {
+  "canopy": "ephemeral-shadow",
+  "vaporLeakage": false,
+  "tetheredOutcomes": 2
+}
