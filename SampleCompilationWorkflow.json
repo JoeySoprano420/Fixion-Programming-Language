@@ -1,0 +1,17 @@
+{
+  "build": {
+    "mode": "release",
+    "optimize": true,
+    "enableBDR": true,
+    "enableDeviantForks": true,
+    "outputMap": true,
+    "telemetry": "meta.trace",
+    "plugins": [
+      "injector.middleware.trace",
+      "decorator.semantic-hooks"
+    ]
+  },
+  "output": {
+    "binary": "./build/output/mirror.umx"
+  }
+}
