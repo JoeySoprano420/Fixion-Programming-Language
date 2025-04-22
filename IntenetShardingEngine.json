@@ -1,0 +1,5 @@
+"shardEngine": {
+  "mode": "resilient-burst",
+  "maxThreads": 8,
+  "fallback": "rollback-intent"
+}
